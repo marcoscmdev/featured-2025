@@ -16,9 +16,7 @@ Design a program to calculate a person’s ideal weight using various formulas:
 
 ### **Lorentz Formula**
 $$
-
 \text{IdealWeight} = A - 100 - \frac{(A - 150)}{4} + \frac{(E - 20)}{K}
-
 $$
 - **A** = Height in cm
 - **E** = Age in years
@@ -26,26 +24,20 @@ $$
 
 ### **Perroult Formula:**
 $$
-
 \text{IdealWeight} = A - 100 + \left( \frac{E}{10} \times \frac{9}{10} \right)
-
 $$
 - **A** = Height in cm
 - **E** = Age in years
 ### ** Broca Index:**
 $$
-
 \text{IdealWeight} = A - 100
-
 $$
 - **A** = Height in cm
 
 ### **Metropolitan Life Insurance Company Formula:**
 
 $$
-
 \text{IdealWeight} = 50 + 0.75 \times (A - 150)
-
 $$
 - **A** = Height in cm
 
