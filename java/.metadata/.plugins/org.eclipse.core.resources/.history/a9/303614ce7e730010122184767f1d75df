@@ -1,0 +1,45 @@
+package secret_number;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class Console_secret_number {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		Random secretRandom = new Random();
+		int secretNumber = secretRandom.nextInt(1, 100);
+		
+		int trieds = 0;
+		boolean endProgram = false;
+		
+		System.out.println("El numero secreto generado es: "+ secretNumber);
+		
+		System.out.println("Welcome to the Secret Number Game");
+		System.out.println("Do you can adivinating the secret number that computer make. The range of number is the 1 a 100");
+		System.out.println("Well, please; tell me the number if you believe it");
+	
+			while(endProgram!=false) {
+				System.out.println("Tell me the new number");
+				int numberUser = input.nextInt();
+				if(numberUser<secretNumber) {
+					System.out.println("My number is menor");
+					trieds ++;
+				}
+				else if (numberUser>secretNumber) {
+					System.out.println("My number is mayor");
+					trieds ++;
+				}
+				else {
+					System.out.println("You win!!");
+					System.out.println("Your number of tryes"+trieds);
+					endProgram =true;
+				}
+					
+			}
+			
+		
+	}
+}

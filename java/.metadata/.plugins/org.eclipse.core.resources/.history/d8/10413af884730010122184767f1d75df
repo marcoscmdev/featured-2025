@@ -1,0 +1,42 @@
+package tree_asterisk;
+
+import java.util.Scanner;
+
+public class Tree {
+
+	public static void main(String[] args) {
+
+	Scanner input = new Scanner(System.in);
+	
+	int finalTree = 0;
+	String tree = "*";
+	
+	System.out.println("Hello! Go to make a great asterik's tree");
+	System.out.println("Tell me the integer number of how long you want a tree");
+	
+	try {
+		double size = input.nextInt();
+		
+		// while
+		while (finalTree !=size) {
+			System.out.println(tree);
+			tree = tree+"*";
+			finalTree++;
+		}
+		
+		for (int i = 0; i < size; i++) {
+			System.out.println(tree);
+			tree = tree+"*";
+		}
+		
+		
+	} catch (Exception e) {
+		System.err.print("Incorrect number");
+	}
+	
+	
+		
+		
+	}
+
+}

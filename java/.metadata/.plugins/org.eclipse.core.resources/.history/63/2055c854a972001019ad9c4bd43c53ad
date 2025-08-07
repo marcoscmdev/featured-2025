@@ -1,0 +1,61 @@
+package weight_calculator;
+
+import java.util.Scanner;
+
+public class Console_calculator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner input = new Scanner(System.in);
+		
+		
+		double height = 0;
+		int age = 0;
+		double kL =0;
+		
+		
+	// menu
+		
+		System.out.println("Hello to Ideal Weight Calculator");
+		System.out.println("In first place, please introduce your name:");
+		String name = input.nextLine();
+		System.out.println("Great "+name+" now, select your gender:m(male),f(female)");
+		char gender = input.nextLine().toLowerCase().charAt(0);
+		System.out.println("Now, write your height(in cm)");
+		height = input.nextDouble();
+		System.out.println("Finally, please write your age");
+		age = input.nextInt();
+		System.out.println("Your ideal weight: ");
+			if(gender=='m')kL=4;
+			else kL=2.5;
+		
+		
+		// Lorentz
+		
+		double weightL = (height-100)-((height-150)/4)+((age-120)/kL);
+		
+		// Perroult
+		
+		double weightP = (height-100)+(age/10)*(9/10); 
+		
+		// Brocca 
+		
+		double weightB = height-100;
+		
+		// metropolitan
+		
+		double weightM = (50+0.75)*(height-150);
+		
+		// show results
+		
+	
+		System.out.println("Lorentz´s formula: "+weightL);
+		System.out.println("Perroult´s formula: "+weightP);
+		System.out.println("Brocca´s formula: "+weightB);
+		System.out.println("Metropolitan´s formula: "+weightM);
+		
+		
+	}
+
+}
