@@ -10,7 +10,7 @@ I encourage you to do so, as most of the exercises have practical or recreationa
 ### ✅ Exercise 1 – Ideal Weight Calculator
 
 **Instructions:**  
-Design a program to calculate a person’s ideal weight using various formulas:
+>Design a program to calculate a person’s ideal weight using various formulas:
 
 ---
 
@@ -42,7 +42,7 @@ $$
 - **A** = Height in cm
 
 - **A** = Height in cm
-
+_
 ---
 
 📝 **Reflections:**  
@@ -72,8 +72,8 @@ In the future, I plan to improve this project by adding a simple **graphical int
 ### ✅ Exercise 2 – Asterisk Tree
 
 **Instructions:**  
-Create a program that accepts an integer number `n` representing the number of lines to draw.  
-Based on the input, the program displays a growing sequence of asterisks line by line.
+>Create a program that accepts an integer number `n` representing the number of lines to draw.  
+>Based on the input, the program displays a growing sequence of asterisks line by line.
 
 📝 **Reflections:**  
 This is a classic exercise for practicing loops. I chose it because of its **visual impact** and because I find it **fun, simple, and useful** for building logical thinking.
@@ -93,14 +93,14 @@ I also want to note that my working method **excludes using ChatGPT or Stack Ove
 ### ✅ Exercise 3 – The Secret Number
 
 **Instructions:**  
-This is the classic **Secret Number Game**.  
-The computer selects a random number between 1 and 100.  
-The user enters guesses via the keyboard, and the computer responds:
+>This is the classic **Secret Number Game**.  
+>The computer selects a random number between 1 and 100.  
+>The user enters guesses via the keyboard, and the computer responds:
 
-> “My number is higher.”  
-> “My number is lower.”
+>> “My number is higher.”  
+>> “My number is lower.”
 
-When the user guesses the number correctly, the program congratulates them and displays the number of attempts.
+>When the user guesses the number correctly, the program congratulates them and displays the number of attempts.
 
 📝 **Reflections:**  
 A simple but **surprisingly fun** exercise.  
