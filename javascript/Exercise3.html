@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math</title>
+</head>
+<body>
+    <h1>Some formulas using class Math</h1>
+
+    <table>
+        <tr>
+            <td>  <input type="text" id="number1" placeholder="radio/base/capital"></td>
+            <td>  <input type="text" id="number2" placeholder="height/rate"></td>
+        </tr>
+        <tr>
+            <td><button onclick="showResult(circleArea(...getValues()))">Circle area</button></td>
+            <td><button onclick="showResult(circlePerimeter(...getValues()))">Circle Perimeter</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="showResult(triangleArea(...getValues()))">Triangle Area</button></td>
+            <td><button onclick="showResult(rectangleArea(...(getValues())))">Rectangle Area</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="showResult(pithagoras(...getValues()))">Pythagoras </button></td>
+            <td><button onclick="showResult(tax(...getValues()))">Compound 10 years</button></td>
+        </tr>
+    </table>
+<h2>Result: </h2><p id="result"></p>
+
+<script>
+    function getValues(){
+        let n1 = parseFloat(document.getElementById("number1").value);
+        let n2 = parseFloat(document.getElementById("number2").value);
+        return [n1,n2];
+    }
+    function showResult(value){
+        document.getElementById("result").innerHTML = value;
+    }
+    function circleArea(base){
+        return Math.PI*Math.pow(base,2);   
+    }
+    function circlePerimeter(radio){
+        return 2*Math.PI*radio;
+    }
+      function triangleArea(base, height){
+        return (base*height)/2;
+        result.innerHTML = areat;
+    }
+    function rectangleArea(base, height){
+        return base*height;
+    }
+    function pithagoras(a, b){
+        return Math.sqrt(Math.pow(a,2)+Math.pow(b,2))
+    }
+    function tax(c,r){
+       return c * Math.pow(Math.E, r * 10);
+    }
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Summation</title>
+</head>
+<script>
+    let total = 0;
+    const numbers = [];
+
+    function addition() {
+        let number = document.getElementById("number").value;
+        number = parseInt(number);
+
+        total = total + number;
+        result.innerHTML = total;
+
+        numbers.push(number);
+        register.innerHTML = numbers;
+    }
+
+    function resetAddition() {
+        total = 0;
+        numbers.length = 0; 
+        result.innerHTML = 0;
+        register.innerHTML = numbers;
+        debug.innerHTML = "Reset successful";
+    }
+</script>
+<body>
+    <h1>The Summation</h1>
+    <p>
+        Create a JavaScript program that allows the user to enter an integer number into a text box.  
+        When pressing a button called "Add", the number should be added to an accumulated sum.  
+        Optionally, display below a list of all the numbers that the user has entered so far.  
+        There should also be a button called "Reset" which resets the sum to zero and clears the list, so the user can start again.
+    </p>
+
+    Value: <input type="text" id="number"> 
+    <button onclick="addition()">Add</button>
+    <button onclick="resetAddition()">Reset</button>
+
+    <p id="result"></p>
+
+    Number log:  
+    <p id="register"></p>
+
+    Debug: 
+    <p id="debug"></p>
+</body>
+</html>

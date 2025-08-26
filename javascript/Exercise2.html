@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array World</title>
+</head>
+<script>
+    const array = [];
+
+    function addValue(){
+        var value = document.getElementById("value").value;
+        array.push(value);
+        store.innerHTML = array;
+    }
+
+    function insertAtPosition(){
+        let position = document.getElementById("position").value;
+        let newValue = document.getElementById("value").value;
+        array.splice(position, 0, newValue);
+        store.innerHTML = array;
+    } 
+</script>
+<body>
+    <h1>Store and delete information in an array</h1>
+
+    <h2>
+        Create a JavaScript program that allows you to enter values in a text box 
+        and store them in an array each time you press a button called "Add".  
+        <p>Also, create a button called "Erase" that removes all the values stored in the array, clearing its contents.</p> 
+        <p>Optionally, create a number input to select a position in the array, and two buttons to either insert a value at that position or delete the value at that position.</p>
+    </h2>
+
+    Value: <input type="text" id="value"> 
+    <button onclick="addValue()">ADD</button> 
+    <button onclick="eraseAll()">ERASE</button><br>
+
+    Position: <input type="text" id="position" maxlength="50" size="16"> 
+    <button onclick="insertAtPosition()">INSERT</button> 
+    <button onclick="deleteAtPosition()">DELETE</button>
+    
+    <p id="store"> </p>
+
+<script>
+    function eraseAll(){
+        array.length = 0; 
+        store.innerHTML = array;
+     }  
+
+    function deleteAtPosition(){
+        let position = document.getElementById("position").value;
+        array.splice(position, 1); 
+        store.innerHTML = array;
+    }
+</script>
+
+</body>
+</html>
